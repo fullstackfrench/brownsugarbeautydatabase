@@ -1,0 +1,561 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html { font-size: 62.5%}
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 40px;
+}
+
+
+h1{
+  font-family: 'Modak', sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 8%;
+
+  }
+
+.slogan, h3, h4, a, p {
+  font-family: 'Montserrat', sans-serif;
+
+}
+.slogan {
+  position: absolute;
+  top: 22%;
+  left: 32%;
+  font-size: 1.3rem;
+  margin: 0;
+  padding-top: 2rem;
+}
+nav, .headPage {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+
+}
+nav > img {
+  margin-left: 3%;
+  
+}
+
+h1{
+  font-family: 'Modak', sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 11%;
+
+  }
+  
+#siteSearch {
+  width: 25%;
+  height: 25px;
+  position: absolute;
+  top: 30%;
+  left: 43%;
+}
+  
+.searchButton { 
+  position: absolute;
+  top: 30%;
+  left: 68.5%;
+  width: 5%;
+  height: 25px;
+  background-color: black;
+  color: white;
+  box-shadow: none;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 5px;
+  padding-left: 1%;
+  font-size: 1.2rem;
+}
+
+li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+ul + a {
+  margin-top: 15px;
+  padding-right: 2%;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+/* .sectionTop {
+  background-image: url("https://i.ibb.co/MZnsSxD/hair-salon-banner.png");
+  background-size: 100%;
+  height: 380px; */
+  /* display: flex;
+  justify-content: right; */
+  
+  
+/* } */
+
+.banner {
+  height: auto;
+  width: 100%;
+}
+.titleTop {
+  width: 100%;
+}
+.titleTop > h1 {
+  letter-spacing: .05em;
+  color: black;
+  font-size: 6.8rem;
+  -webkit-text-stroke: 1px black;
+	-webkit-text-fill-color: white;
+  margin-left: 22%;
+  margin-top: 23px;
+  
+}
+.spanTop {
+  display: block;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+}
+
+.spanTop + a {
+  border: 12px black solid;
+  color: white;
+  font-size: 1.7em;
+  background-color: black;
+  display: inline-block;
+
+}
+.couponTop {
+  width: 35%;
+  margin-top: 70px;
+  font-size: 1.7rem;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  height: 250px;
+}
+ul > .firstVisit {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+
+}
+.couponContent { 
+  list-style: none;
+  padding-left: 0;
+}
+.percentageOff { 
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hairColor {
+  font-size: 1.25rem;
+}
+.hairColor + li { 
+  margin-top: 30px;
+  background-color: white;
+  display: inline-block;
+  border: 6px white solid;
+}
+
+.sectionTwo {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.miniSection{
+  width: 20%;
+}
+.miniSection img {
+  margin-left: 30%;
+  height: 25%;
+}
+.sectionTwo .miniSection h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+.miniSection p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2em;
+}
+.sectionThree {
+  display: flex;
+  background-color: rgb(240, 241, 244);
+  height: 650px;
+  
+}
+.subThree {
+  margin-left: 12%;
+  margin-right: 10%;
+  width: 30%;
+
+}
+.subThree > h3 { 
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+.subThree p {
+  font-size: 1.5em;
+  line-height: 2em;
+  margin-bottom: 40px;
+}
+.subThree p + a {
+  border: 8px black solid;
+  color: white;
+  background-color: black;
+  font-size: 1.2rem;
+}
+.hairSalon img{
+  width: 65%;
+  margin-top: 50px;
+}
+
+.sectionFour {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+.sectionFour img {
+  width: 70%;
+}
+
+.miniFour {
+  width: 350px;
+}
+.miniFour span {
+  display: block;
+  margin-left: 25px;
+  color: white;
+  border: 9px solid black;
+  background-color: black;
+  width: 210px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -15px;
+}
+.sectionFive {
+  background-image: url("https://i.ibb.co/D1VXH0f/IMG-0018.jpg");
+  height: 305px;
+  background-repeat: no-repeat;
+  background-size: 950px 324px;
+  margin-top: 90px;
+  border: 12px black solid;
+  width: 100%;
+}
+
+.sectionFive .colorDay {
+  margin-top: 50px;
+  margin-left: 125px
+}
+.colorOffer {
+  font-size: 2em;
+  margin-bottom: 8px;
+  margin-left: 50px;
+}
+.percentageOffTen {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.colorDay .hairCut {
+  font-size: 2.5rem;
+}
+.colorDay .hairColor {
+  font-size: 2.5rem;
+}
+.appointMent {
+  font-size: 1.5rem;
+  margin-left: 3%;
+}
+.appointMent a {
+  border: 9px black solid;
+  background-color: black;
+  color: white;
+}
+.headerLookbook h3 {
+display: flex;
+justify-content: center;
+font-size: 5rem;
+margin-top: 80px;
+margin-bottom: 0;
+}
+.headerLookbook span {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+  header {
+    height: 30px;
+  }
+  
+  nav, .headPage {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1rem;
+    width: 500px;
+    padding-left: 0;
+}
+nav > img {
+  margin-left: 0;
+  width: 15%;
+
+}
+
+li {
+  margin: 0 4px;
+  list-style: none;}
+
+  ul + a {
+    margin-top: 5px;
+    margin-left: 2%;
+  }
+  .sectionTop {
+    background-image: url("https://i.ibb.co/zG3G7Zm/dreamstime-xxl-220262691.jpg");
+    /* display: flex; */
+    /* justify-content: center; */
+    padding-right: 100px;
+  }
+
+  .titleTop > h1 {
+    color: white;
+    font-size: 3.3rem;
+    margin-bottom: 10px;
+  }
+  .spanTop {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .spanTop + a {
+    border: 6px black solid;
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+}
+
+.couponTop {
+  width: 90%;
+  display: block;
+  margin-top: 70px;
+  margin-right: 200px;
+  font-size: 1.7rem;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  height: 180px;
+}
+
+
+.miniSection{
+  width: 100%;
+  
+}
+
+.sectionTwo .miniSection h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.hairColor + li {
+  margin-top: 30px;
+  background-color: white;
+  display: inline-block;
+  border: 6px white solid;
+  font-size: 1.2rem;
+}
+.sectionTwo {
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+  height: 600px;
+  width: 100%;
+
+}
+
+.miniSection{
+  width: 80%;
+}
+.miniSection img {
+  margin-left: 150px;
+  height: 80px;
+  width: 100px;
+  
+}
+.sectionTwo .miniSection h4 {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+.miniSection p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+.sectionThree {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 241, 244);
+  height: 600px;
+  width: 100%;
+  
+}
+.subThree {
+  margin-left: 0;
+  margin-right: 0;
+  
+
+}
+.subThree > h3 { 
+  font-size: 4rem;
+  font-weight: 100;
+  width: 500px;
+  text-align: center;
+
+}
+.subThree p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+  margin-left: 60px;
+  width: 400px;
+  text-align: center;
+
+}
+.subThree p + a {
+  display: block;
+  margin-left: 180px;
+  border: 8px black solid;
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+  width: 100%;
+}
+.hairSalon img{
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.sectionFour {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+.sectionFour img {
+  width: 100%;
+}
+
+.miniFour {
+  margin-top: 75px;
+  width: 350px;
+  align-items: center;
+}
+.miniFour span {
+  display: block;
+  margin-left: 35px;
+  color: white;
+  border: 9px solid black;
+  background-color: black;
+  width: 300px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: -15px;
+}
+.sectionFive {
+  background-image: url("https://i.ibb.co/D1VXH0f/IMG-0018.jpg");
+  height: 324px;
+  background-repeat: no-repeat;
+  background-size: 950px 324px;
+  margin-top: 90px;
+  margin-left: 50px;
+  border: 12px black solid;
+  width: 450px;
+}
+.sectionFive .colorDay {
+  margin-top: 50px;
+  margin-left: 15px
+}
+}
